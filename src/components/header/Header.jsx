@@ -22,5 +22,6 @@ export const Header = ({ setClick }) => {
         ))}
       </Stack>
     </Container>
+    
   );
 };
