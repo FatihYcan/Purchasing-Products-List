@@ -42,4 +42,6 @@ Bu proje, ürünleri listeleyen ve yönetmenizi sağlayan basit bir React uygula
 - Bootstrap
 - React Icons
 
+https://github.com/user-attachments/assets/e9ca15f1-c495-49d8-a801-3c4adf57c9d8
+
 [Live](https://fy-product-list-app.netlify.app/)
