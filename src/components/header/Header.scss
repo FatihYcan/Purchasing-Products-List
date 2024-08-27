@@ -1,34 +1,48 @@
 @import "../../scss/variables";
+@import "../../scss/mixins";
 
 .header {
+  display: block;
   text-align: center;
+  position: relative;
   padding: 0.5rem;
-  margin-top: 3rem;
+  background-image: linear-gradient(to bottom, #2196f3 0%, #00bcd4 100%);
+  margin-bottom: 1rem;
 
   h1 {
     margin-bottom: 1rem;
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     color: $cardNavBgColor;
+    font-weight: 700;
   }
-
   //! buttons
 
   .btns {
+    @include flex(rows, center, 1rem);
     margin-top: 1rem;
 
     button {
-      padding: 1rem;
+      padding: 0.75rem 1.5rem;
       border-radius: $borderRadius;
-      border: none;
+      border: 1px solid $cardNavBgColor;
+      background-color: $cardColor;
+      color: $cardNavBgColor;
+      font-size: 1rem;
       cursor: pointer;
-      transition: all 1s;
+      transition: background-color 0.3s, transform 0.3s;
 
-      &.active {
-        background-color: $btnHoverColor;
-      }
       &:hover {
         background-color: $btnHoverColor;
+        transform: scale(1.05);
+        color: white;
       }
     }
+  }
+}
+
+@include media-md {
+  button {
+    border: 5px solid red;
+    width: 80%;
   }
 }

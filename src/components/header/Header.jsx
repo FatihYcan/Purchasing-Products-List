@@ -1,10 +1,10 @@
 import React from "react";
-import { Button, Container, Stack } from "react-bootstrap";
+import { Button, Stack } from "react-bootstrap";
 import "./Header.scss";
 import { categories } from "../../helper/data";
 export const Header = ({ setClick }) => {
   return (
-    <Container className="header">
+    <div className="header">
       <h1>Products List</h1>
 
       <Stack
@@ -21,7 +21,6 @@ export const Header = ({ setClick }) => {
           </Button>
         ))}
       </Stack>
-    </Container>
-    
+    </div>
   );
 };

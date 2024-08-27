@@ -30,19 +30,20 @@ const ProductsList = () => {
   }, [basket, products]);
 
   return (
-    <Container fluid>
+    <>
       <Header setClick={setClick} money={money} total={total} />
       <Form.Control
         placeholder="Search Product..."
         type="search"
-        className="w-50 m-auto"
+        className="input"
+  
         onChange={(e) => setValue(e.target.value)}
         value={value}
       />
 
       <Container className="mt-3 ">
         <Row>
-          <Col className="bg-light border border-light h-100 mb-3 x" md={3}>
+          <Col className="bg-light border border-light h-100 mb-3 col-money" md={3}>
             <Container className="text-center mt-3">
               {total > 0 && money - total !== 0 && (
                 <div>
@@ -113,7 +114,7 @@ const ProductsList = () => {
           </Col>
         </Row>
       </Container>
-    </Container>
+    </>
   );
 };
 
